@@ -12,21 +12,21 @@
 
 <body>
     <!--Rules Sketch-->
-    <img src="assets/images/Rock Paper Scissors rules.png" alt="image sketch of game rules">
+    <div class="image">
+        <img src="assets/images/Rock Paper Scissors rules.jpg" alt="image sketch of game rules">
+    </div>
+
 <!-- display of player choices and results-->
     <div class="container">
-        <h1>Player X Selection:  <span class="playerXselection"></span></h1>
-        <h1>Player Y Selection:  <span class="playerYselection"></span></h1>
-        <h3>Result:  <span id="result"></span></h3>
-
+        <h1 id="player-x">Player X Selection:  <span class="playerXselection"></span></h1>
+        <h1 id="player-y">Player Y Selection:  <span class="playerYselection"></span></h1>
+        <h1 id="result">Result:  <span class="result"></span></h1>
+    </div>
 <!-- Buttons for player selection-->
         <button class="rock">Rock</button>
         <button class="scissors">Scissors</button>
         <button class="paper">Paper</button>
-    </div>
-
-
-
+    
 
     <!--link to Javascript sheet-->
     <script src="assets/js/script.js"></script>
