@@ -7,23 +7,23 @@
 .image {
     padding: 2rem;
     background: none;
+    margin-left: 40%;
 }
 
 .container {
     width: 80%;
+    height: 400px;
     margin-left: 10%;
     text-align: center;
-    background-color: rgb(165, 164, 164);
+    background-color: rgb(155, 152, 152);
 }
 
-#player-x {
+#player-selection {
     color: blue;
-    display: grid;
-    float: left;
     width: 50%;
 }
 
-#player-y {
+#computer-selection {
     color: red;
     
 }
@@ -32,4 +32,8 @@
     color: green;
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+#Rock {
+    margin-left: 45%;
 }
