@@ -5,7 +5,7 @@
 const playerSelectionDisplay = document.getElementById("player-selection");
 const computerSelectionDisplay = document.getElementById("computer-selection");
 const resultsDisplay = document.getElementById("result");
-const availableSelections = document.querySelectorAll("button");
+const availableSelections = document.querySelectorAll(src);
 
 let playerSelection
 let computerSelection

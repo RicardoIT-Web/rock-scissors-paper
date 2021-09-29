@@ -5,14 +5,23 @@
 }
 
 .image {
+    font-size: xx-large;
+    display: grid;
     padding: 2rem;
     background: none;
     margin-left: 40%;
 }
 
+p {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
 .container {
     width: 80%;
-    height: 400px;
+    height: 300px;
     margin-left: 10%;
     text-align: center;
     background-color: rgb(155, 152, 152);
@@ -33,7 +42,11 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-
-#Rock {
+/*Rock {
     margin-left: 45%;
+}
+*/
+button img {
+    height: 200px;
+    border-radius: 100%;
 }
