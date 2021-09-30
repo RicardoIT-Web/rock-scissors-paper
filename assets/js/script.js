@@ -21,7 +21,7 @@ availableSelections.forEach(button => {
     playerSelectionDisplay.innerHTML = playerSelection
     generateComputerSelection()
     getResult()
-    changeImg()
+    img_Tracker()
     })
 })
 
@@ -70,4 +70,16 @@ function getResult() {
 
     resultsDisplay.innerHTML = result
 
+    let img_Tracker = "button";
+        function changeImg () {
+            let image = document.getElementById("Rock", "Scissors", "Paper");
+            if (img_tracker == "Rock") {
+                image.src = "assets/images/rock.jpg";
+            } else if (img_tracker == "Scissors") {
+                image.src = "assets/images/scissors.jpg";
+            } else if (img_tracker == "Paper") {
+                image.src = "assets/images/paper.jpg";
+            }
+
+        }
 }
