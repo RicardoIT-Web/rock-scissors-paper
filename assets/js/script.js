@@ -5,7 +5,7 @@
 const playerSelectionDisplay = document.getElementById("player-selection");
 const computerSelectionDisplay = document.getElementById("computer-selection");
 const resultsDisplay = document.getElementById("result");
-const availableSelections = document.querySelectorAll(src);
+const availableSelections = document.querySelectorAll("button");
 
 let playerSelection
 let computerSelection
@@ -21,6 +21,7 @@ availableSelections.forEach(button => {
     playerSelectionDisplay.innerHTML = playerSelection
     generateComputerSelection()
     getResult()
+    changeImg()
     })
 })
 
@@ -68,4 +69,5 @@ function getResult() {
     }
 
     resultsDisplay.innerHTML = result
+
 }
