@@ -5,7 +5,7 @@
 const playerSelectionDisplay = document.getElementById("player-selection");
 const computerSelectionDisplay = document.getElementById("computer-selection");
 const resultsDisplay = document.getElementById("result");
-const availableSelections = document.querySelectorAll("button");
+const availableSelections = document.querySelectorAll("input");
 
 let playerSelection
 let computerSelection
@@ -15,13 +15,13 @@ let computerSelection
  * add a click eventlistener to the available clickable options
  */
 
-availableSelections.forEach(button => {
-    button.addEventListener("click", (event) => {
-    playerSelection = event.target.id
+availableSelections.forEach(input => {
+    input.addEventListener("click", (event) => {
+    playerSelection = event.target.name
     playerSelectionDisplay.innerHTML = playerSelection
     generateComputerSelection()
     getResult()
-    img_Tracker()
+    changeImg()
     })
 })
 
@@ -69,17 +69,4 @@ function getResult() {
     }
 
     resultsDisplay.innerHTML = result
-
-    let img_Tracker = "button";
-        function changeImg () {
-            let image = document.getElementById("Rock", "Scissors", "Paper");
-            if (img_tracker == "Rock") {
-                image.src = "assets/images/rock.jpg";
-            } else if (img_tracker == "Scissors") {
-                image.src = "assets/images/scissors.jpg";
-            } else if (img_tracker == "Paper") {
-                image.src = "assets/images/paper.jpg";
-            }
-
-        }
 }
