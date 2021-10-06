@@ -22,6 +22,7 @@ availableSelections.forEach(input => {
     generateComputerSelection()
     getResult()
     changeImg()
+    trackScore()
     })
 })
 
@@ -69,4 +70,11 @@ function getResult() {
     }
 
     resultsDisplay.innerHTML = result
+}
+
+function trackScore() {
+
+    // increments player score
+    let pScore = parseInt(document.getElementById("pscore").innerText);
+    document.getElementById("pscore").innerText = ++pScore;
 }

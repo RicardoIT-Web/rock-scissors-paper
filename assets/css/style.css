@@ -24,7 +24,7 @@ p {
     height: 350px;
     margin-left: 10%;
     text-align: center;
-    background-color: rgb(155, 152, 152);
+    background-color: rgb(179, 176, 176);
 }
 
 #player-selection {
@@ -45,6 +45,31 @@ p {
 
 input {
     padding: 10px;
+    margin: 25px 0 25px 0;
+}
+
+.rock {
+    transition: 100ms;
+}
+
+.rock:hover {
+    transform: scale(1.2);
+}
+
+.scissors {
+    transition: 100ms;
+}
+
+.scissors:hover {
+    transform: scale(1.2);
+}
+
+.paper {
+    transition: 100ms;
+}
+
+.paper:hover {
+    transform: scale(1.2);
 }
 
 .scoreboard {
