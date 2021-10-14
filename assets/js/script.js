@@ -1,11 +1,14 @@
 /**
- * Define fix statements containing the content that do not change
+ * Define fixed statements containing contents that do not change
  */
 
 const playerSelectionDisplay = document.getElementById("player-selection");
 const computerSelectionDisplay = document.getElementById("computer-selection");
 const resultsDisplay = document.getElementById("result");
 const availableSelections = document.querySelectorAll("input");
+const playerScoreDisplay = document.getElementById("pScore");
+const computerScoreDisplay = document.getElementById("cScore");
+const drawScoreDisplay = document.getElementById("dScore");
 
 let playerSelection
 let computerSelection
@@ -21,7 +24,6 @@ availableSelections.forEach(input => {
     playerSelectionDisplay.innerHTML = playerSelection
     generateComputerSelection()
     getResult()
-    changeImg()
     trackScore()
     })
 })
@@ -54,10 +56,10 @@ function getResult() {
         result = "You Win!"
     }
     else if (computerSelection === "Rock" && playerSelection ==="Scissors") {
-        result = "Computer Won!"
+        result = "Computer Wins!"
     }
     else if (computerSelection === "Scissors" && playerSelection ==="Paper") {
-        result = "Computer Won!"
+        result = "Computer Wins!"
     }
     else if (computerSelection === "Scissors" && playerSelection ==="Rock") {
         result = "You Win!"
@@ -66,15 +68,52 @@ function getResult() {
         result = "You Win!"
     }
     else if (computerSelection === "Paper" && playerSelection ==="Rock") {
-        result = "Computer Won!"
+        result = "Computer Wins!"
     }
 
     resultsDisplay.innerHTML = result
 }
 
+function incrementDrawScore() {
+        // increments draw score
+
+        let currentDrawScore = parseInt(drawScoreDisplay.innerHTML)
+        let newDrawScore = currentDrawScore +1
+        drawScoreDisplay.innerHTML = newDrawScore
+}
+
+function incrementPlayerScore() {
+    // increments player score
+    let currentPlayerScore = parseInt(playerScoreDisplay.innerHTML) 
+    let newPlayerScore = currentPlayerScore +1
+    playerScoreDisplay.innerHTML = newPlayerScore
+}
+
+function incrementComputerScore() {
+    //increments Computer Score
+    let currentComputerScore = parseInt(computerScoreDisplay.innerHTML) 
+    let newComputerScore = currentComputerScore +1
+    computerScoreDisplay.innerHTML = newComputerScore
+}
+
+
 function trackScore() {
 
-    // increments player score
-    let pScore = parseInt(document.getElementById("pscore").innerText);
-    document.getElementById("pscore").innerText = ++pScore;
+    let gameResult = resultsDisplay.innerHTML
+    if (gameResult === "Its a Draw!") {
+        incrementDrawScore()
+    } else if (gameResult === "You Win!") {
+        incrementPlayerScore()
+    }else if (gameResult === "Computer Wins!") {
+        incrementComputerScore()
+    }
+
+
+
+   
+ 
+      
+
+
+
 }
