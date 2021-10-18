@@ -4,19 +4,58 @@
     box-sizing: border-box;
 }
 
-.image {
-    font-size: xx-large;
-    display: float;
-    padding: 2rem;
-    background: none;
+body {
+    background: rgb(56, 135, 238);
 }
 
-p {
+h1, h3{
+    text-align: center;
+    margin-top: 30px;
+}
+.rules {
     font-size: 1.5rem;
     width: 50%;
     text-align: center;
     margin-left: 25%;
-    display: float;
+}
+
+img {
+    width: 100px;
+}
+
+.rule {
+    display: inline-flex;
+    margin: 25px;
+}
+
+.text {
+    padding-top: 40px;
+    margin: 0 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startplay {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
+}
+
+.startplay:hover {
+    transition: 75ms;
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
 }
 
 .container {
