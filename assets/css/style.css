@@ -7,15 +7,17 @@
 }
 
 body {
-    background: rgb(56, 135, 238);
+    background: rgb(111, 169, 245);
 }
 
 /* homepage styling */
 
-h1, h3{
+.gamerules{
     text-align: center;
-    margin-top: 15px;
-    padding-top: 10px;
+}
+
+.rulestext{
+    text-align: center;
 }
 .rules {
     font-size: 1.5rem;
@@ -26,7 +28,6 @@ img {
 }
 
 .rule {
-    margin: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,6 +72,7 @@ a {
     width: 90%;
     height: 11rem;
     margin-left: 5%;
+    margin-top: 20px;
     text-align: center;
     background-color: rgb(194, 189, 189);
 }
@@ -151,5 +153,7 @@ a {
 
 .playersText {
     font-size: x-large;
+    margin: 13px;
+    padding-top: 10px;
 }
 
