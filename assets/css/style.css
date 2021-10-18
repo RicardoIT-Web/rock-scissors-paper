@@ -6,10 +6,9 @@
 
 .image {
     font-size: xx-large;
-    display: grid;
+    display: float;
     padding: 2rem;
     background: none;
-    margin-left: 40%;
 }
 
 p {
@@ -17,6 +16,7 @@ p {
     width: 50%;
     text-align: center;
     margin-left: 25%;
+    display: float;
 }
 
 .container {
@@ -46,6 +46,7 @@ p {
 input {
     padding: 10px;
     margin: 25px 0 25px 0;
+    background-color: none;
 }
 
 .rock {

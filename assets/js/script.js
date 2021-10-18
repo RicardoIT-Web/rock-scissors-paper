@@ -10,12 +10,13 @@ const playerScoreDisplay = document.getElementById("pScore");
 const computerScoreDisplay = document.getElementById("cScore");
 const drawScoreDisplay = document.getElementById("dScore");
 
+
 let playerSelection
 let computerSelection
-
+let result
 
 /**
- * add a click eventlistener to the available clickable options
+ * add a click eventlistener to the available clickable options and trigger functions
  */
 
 availableSelections.forEach(input => {
@@ -75,11 +76,11 @@ function getResult() {
 }
 
 function incrementDrawScore() {
-        // increments draw score
+    // increments draw score
 
-        let currentDrawScore = parseInt(drawScoreDisplay.innerHTML)
-        let newDrawScore = currentDrawScore +1
-        drawScoreDisplay.innerHTML = newDrawScore
+    let currentDrawScore = parseInt(drawScoreDisplay.innerHTML)
+    let newDrawScore = currentDrawScore +1
+    drawScoreDisplay.innerHTML = newDrawScore
 }
 
 function incrementPlayerScore() {
@@ -104,16 +105,8 @@ function trackScore() {
         incrementDrawScore()
     } else if (gameResult === "You Win!") {
         incrementPlayerScore()
-    }else if (gameResult === "Computer Wins!") {
+    } else if (gameResult === "Computer Wins!") {
         incrementComputerScore()
     }
-
-
-
-   
- 
-      
-
-
-
 }
+
