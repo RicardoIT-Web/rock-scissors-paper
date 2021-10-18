@@ -14,9 +14,6 @@ h1, h3{
 }
 .rules {
     font-size: 1.5rem;
-    width: 50%;
-    text-align: center;
-    margin-left: 25%;
 }
 
 img {
@@ -24,12 +21,13 @@ img {
 }
 
 .rule {
-    display: inline-flex;
     margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
-    padding-top: 40px;
     margin: 0 20px;
 }
 
