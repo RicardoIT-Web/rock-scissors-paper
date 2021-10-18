@@ -11,37 +11,37 @@
 </head>
 
 <body>
-
-    <div> 
-        <button><a href="homepage.html">Back to Main Page</a></button>
-    </div>
-
 <!-- display of player choices and results-->
     <div class="container">
-        <h1>Player Selection: <span id="player-selection"></span></h1>
-        <h1>Computer Selection: <span id="computer-selection"></span></h1>
-        <h1>Result:  <span id="result"></span></h1>
-    
-    <div>
+        <h1 class="playersText">Player Selection: <span id="player-selection"></span></h1>
+        <h1 class="playersText">Computer Selection: <span id="computer-selection"></span></h1>
+        <h1 class="playersText">Result:  <span id="result"></span></h1>
+    </div>
+
+    <div class="selectionimgs">
         <input class="rock" type="image" src="assets/images/rock.jpg" name="Rock" width="100" height="100" alt="button to select Rock">
         <input class="scissors" type="image" src="assets/images/scissors.jpg" name="Scissors" width="100" height="100" alt="button to select Scissors">
         <input class="paper" type="image" src="assets/images/paper.jpg" name="Paper" width="100" height="100" alt="button to select Paper">
     </div>
     
     <div id="scoreboard">
-        <div>Player Score: 
+        <div class="playerdisplay">Player: 
             <span id="pScore" class="score">0</span>
         </div>
-        <div>Computer Score:  
+        <div class="playerdisplay">Computer:  
             <span id="cScore" class="score">0</span>
         </div>
-        <div>Draw:  
+        <div class="playerdisplay">Draw:  
             <span id="dScore" class="score">0</span>
         </div>
     </div>
 
-    <button onclick="location.reload();">Start Again!</button>
+    <div class="btn">
+        <button class="startagain" onclick="location.reload();">New Game?</button>
+    </div>
 
+    <div class="btn"> 
+        <button class="rtnhpage"><a href="homepage.html">Back to Main Page</a></button>
     </div>
 
 <!--link to Javascript sheet at the botton so its the last item to load on the brwoser-->

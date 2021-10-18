@@ -1,3 +1,5 @@
+/* generic styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +10,12 @@ body {
     background: rgb(56, 135, 238);
 }
 
+/* homepage styling */
+
 h1, h3{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
+    padding-top: 10px;
 }
 .rules {
     font-size: 1.5rem;
@@ -45,28 +50,35 @@ img {
     background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
 }
 
-.startplay:hover {
-    transition: 75ms;
-    transform: scale(1.2);
-}
-
 a {
     text-decoration: none;
     padding: 15px;
     color: white;
 }
 
+/* indexpage styling */
+
+.rtnhpage {
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
+}
+
 .container {
-    width: 80%;
-    height: 350px;
-    margin-left: 10%;
+    width: 90%;
+    height: 11rem;
+    margin-left: 5%;
     text-align: center;
-    background-color: rgb(179, 176, 176);
+    background-color: rgb(194, 189, 189);
 }
 
 #player-selection {
     color: blue;
     width: 50%;
+    font-size: auto;
 }
 
 #computer-selection {
@@ -80,14 +92,17 @@ a {
     padding-bottom: 5rem;
 }
 
-input {
-    padding: 10px;
+.selectionimgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
     margin: 25px 0 25px 0;
-    background-color: none;
 }
 
 .rock {
     transition: 100ms;
+    margin: 5px;
 }
 
 .rock:hover {
@@ -96,6 +111,7 @@ input {
 
 .scissors {
     transition: 100ms;
+    margin: 5px;
 }
 
 .scissors:hover {
@@ -104,14 +120,36 @@ input {
 
 .paper {
     transition: 100ms;
+    margin: 5px;
 }
 
 .paper:hover {
     transform: scale(1.2);
 }
 
-.scoreboard {
-    font-size: xx-large;
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.playerdisplay {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.startagain {
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
+    color: white;
+    padding: 5px;
+}
+
+.playersText {
+    font-size: x-large;
+}
 
