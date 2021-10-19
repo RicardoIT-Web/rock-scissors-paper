@@ -14,6 +14,7 @@ const drawScoreDisplay = document.getElementById("dScore");
 let playerSelection
 let computerSelection
 let result
+let winningScore
 
 /**
  * add a click eventlistener to the available clickable options and trigger functions
@@ -26,6 +27,7 @@ availableSelections.forEach(input => {
     generateComputerSelection()
     getResult()
     trackScore()
+    endGame()
     })
 })
 
@@ -109,4 +111,19 @@ function trackScore() {
         incrementComputerScore()
     }
 }
+
+
+
+function endGame() {
+
+    if (computerScoreDisplay.innerHTML === "5") {
+        alert("You're not very good at this are you? :) Try again!!")
+    } else if (playerScoreDisplay.innerHTML === "5") {
+        alert("Well done. You've Won!!! Now get back to work! :)")
+    } else if (drawScoreDisplay.innerHTML === "5") {
+        alert("Awww... It's a draw. keep trying!")
+    }
+
+}
+
 
