@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to CSS stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Rock / Scissors / Paper</title>
+</head>
+
+<body>
+<!-- display of player choices and results-->
+    <div class="container">
+        <h1 class="playersText">Player Selection: <span id="player-selection"></span></h1>
+        <h1 class="playersText">Computer Selection: <span id="computer-selection"></span></h1>
+        <h1 class="playersText">Result:  <span id="result"></span></h1>
+    </div>
+
+    <div class="selectionimgs">
+        <input class="rock" type="image" src="assets/images/rock.jpg" name="Rock" width="100" height="100" alt="button to select Rock">
+        <input class="scissors" type="image" src="assets/images/scissors.jpg" name="Scissors" width="100" height="100" alt="button to select Scissors">
+        <input class="paper" type="image" src="assets/images/paper.jpg" name="Paper" width="100" height="100" alt="button to select Paper">
+    </div>
+    
+    <div id="scoreboard">
+        <div class="playerdisplay">Player: 
+            <span id="pScore" class="score">0</span>
+        </div>
+        <div class="playerdisplay">Computer:  
+            <span id="cScore" class="score">0</span>
+        </div>
+        <div class="playerdisplay">Draw:  
+            <span id="dScore" class="score">0</span>
+        </div>
+    </div>
+
+    <div class="btn">
+        <button class="startagain" onclick="location.reload();">New Game</button>
+    </div>
+
+    <div class="btn"> 
+        <button class="rtnhpage"><a href="homepage.html">Back to Main Page</a></button>
+    </div>
+
+<!--link to Javascript sheet at the botton so its the last item to load on the brwoser-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
