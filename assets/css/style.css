@@ -160,6 +160,16 @@ a {
     padding-top: 10px;
 }
 
+@media only screen and (min-width: 320px) {
+    .playersText {
+        font-size: 20px;
+    }    
+    .playerdisplay {
+        font-size: 13px;
+    }
+}
+
+
 @media only screen and (min-width: 375px) {
     .gamerules {
         padding-top: 25px;
@@ -177,5 +187,9 @@ a {
 
     .container {
         margin-top: 50px;
+    }
+
+    .playerdisplay {
+        font-size: 20px;
     }
 }
