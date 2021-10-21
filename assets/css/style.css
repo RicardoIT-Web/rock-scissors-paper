@@ -17,11 +17,22 @@ body {
 
 .gamerules{
     text-align: center;
+    color: blue;
 }
 
-.rulestext{
+.rulestext1{
+    text-align: center;
+    color: blue;
+}
+
+.rulestext2{
     text-align: center;
 }
+
+span {
+    color: blue;
+}
+
 .rules {
     font-size: 1.5rem;
 }
@@ -40,12 +51,6 @@ img {
     margin: 0 20px;
 }
 
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .startplay {
     cursor: pointer;
     border: 1px solid black;
@@ -54,10 +59,12 @@ img {
     background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
 }
 
-a {
+.startbtn {
+    font-size: 20px;
     text-decoration: none;
     padding: 15px;
-    color: white;
+    float: none;
+    text-align: center;
 }
 
 /* indexpage styling */
