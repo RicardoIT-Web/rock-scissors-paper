@@ -17,11 +17,20 @@ body {
 
 .gamerules{
     text-align: center;
-    color: blue;
+    color: black;
+}
+
+h4 {
+    background-color: rgb(194, 189, 189);
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 2px;
+    border-radius: 15%;
 }
 
 .rulestext1{
     text-align: center;
+    padding: 10px;
     color: blue;
 }
 
@@ -51,27 +60,22 @@ img {
     margin: 0 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .startbtn {
     cursor: pointer;
     border: 1px solid black;
     border-radius: 20px;
     font-size: 20px;
-    text-decoration: none;
     text-align: center;
-    padding: 10px;
+    padding: 6px;
     width: 50%;
     margin-left: 25%;
-    margin-top: 5%;
+    margin-top: 14%;
     margin-bottom: 5%;
-    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
-}
-/*
-.startbtn {
-  
-
-
-    float: none;
-    text-align: center;
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%); 
 }
 
 /* indexpage styling */
@@ -92,6 +96,7 @@ img {
     margin-top: 20px;
     text-align: center;
     background-color: rgb(194, 189, 189);
+    border-radius: 10%;
 }
 
 #player-selection {
@@ -155,6 +160,10 @@ img {
 .playerdisplay {
     margin: 20px;
     font-size: 15px;
+}
+
+.btn {
+    text-align: center;
 }
 
 .startagain {
