@@ -4,24 +4,23 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', Open-Sans;
 }
 
 body {
-    background: rgb(111, 169, 245);
+    background: rgb(41, 40, 40);
 }
 
 /* homepage styling */
 
 .gamerules{
     text-align: center;
-    color: black;
+    color: white;
+    margin-top: 40px;
 }
 
 h4 {
-    background-color: rgb(194, 189, 189);
     width: 95%;
     margin-left: 2.5%;
     padding: 2px;
@@ -31,19 +30,21 @@ h4 {
 .rulestext1{
     text-align: center;
     padding: 10px;
-    color: blue;
+    color: white;
 }
 
 .rulestext2{
     text-align: center;
+    color: white;
 }
 
 span {
-    color: blue;
+    color: green;
 }
 
 .rules {
     font-size: 1.5rem;
+    margin-top: 80px;
 }
 
 img {
@@ -58,10 +59,16 @@ img {
 
 .text {
     margin: 0 20px;
+    color: green;
+}
+
+.startbtn a {
+    text-decoration: none;
+    color: white;
 }
 
 a {
-    text-decoration: none;
+    color: red;
 }
 
 .startbtn {
@@ -71,9 +78,9 @@ a {
     font-size: 20px;
     text-align: center;
     padding: 6px;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 14%;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 7%;
     margin-bottom: 5%;
     background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%); 
 }
@@ -89,13 +96,17 @@ a {
     background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
 }
 
+.rtnhpage a {
+    text-decoration: none;
+    color: white;
+}
+
 .container {
     width: 90%;
     height: 11rem;
     margin-left: 5%;
     margin-top: 20px;
     text-align: center;
-    background-color: rgb(194, 189, 189);
     border-radius: 10%;
 }
 
@@ -126,7 +137,7 @@ a {
 
 .rock {
     transition: 100ms;
-    margin: 5px;
+    margin: 35px;
 }
 
 .rock:hover {
@@ -135,7 +146,7 @@ a {
 
 .scissors {
     transition: 100ms;
-    margin: 5px;
+    margin: 35px;
 }
 
 .scissors:hover {
@@ -144,7 +155,7 @@ a {
 
 .paper {
     transition: 100ms;
-    margin: 5px;
+    margin: 35px;
 }
 
 .paper:hover {
@@ -184,6 +195,12 @@ a {
 }
 
 @media only screen and (min-width: 320px) {
+/* index page */
+    .rules {
+        margin-top: 15px;
+    }
+
+/* game page */
     .playersText {
         font-size: 20px;
     }    
