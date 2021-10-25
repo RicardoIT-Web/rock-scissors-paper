@@ -17,7 +17,7 @@ body {
 .gamerules{
     text-align: center;
     color: white;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 h4 {
@@ -44,7 +44,6 @@ span {
 
 .rules {
     font-size: 1.5rem;
-    margin-top: 80px;
 }
 
 img {
@@ -117,7 +116,7 @@ a {
 }
 
 #player-selection {
-    color: blue;
+    color: gold;
     width: 50%;
     font-size: auto;
 }
@@ -195,6 +194,22 @@ a {
     padding: 5px;
 }
 
+.feedbackpage {
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
+    color: white;
+    padding: 5px;
+}
+
+.feedbackpage a {
+    text-decoration: none;
+    color: white;
+}
+
 h2 {
     color: white;
     text-align: center;
@@ -211,6 +226,15 @@ label {
         margin-top: 15px;
     }
 
+    .startbtn {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .rulestext1 {
+        padding-top: 15px;
+    }
+
 /* game page */
     .playersText {
         font-size: 20px;
@@ -222,9 +246,6 @@ label {
 
 
 @media only screen and (min-width: 375px) {
-    .gamerules {
-        padding-top: 25px;
-    }
 
     .container {
         margin-top: 50px;
@@ -243,4 +264,25 @@ label {
     .playerdisplay {
         font-size: 20px;
     }
+}
+
+@media only screen and (min-width: 768px) {
+/* home page */
+    .rules {
+        margin-top: 50px;
+    }
+
+    .rulestext2 {
+        font-size: 20px;
+    }
+
+    .rulestext1 {
+        font-size: 20px;
+    }
+
+/* game page */
+    .btn {
+        margin-top: 20px;
+    }
+
 }
