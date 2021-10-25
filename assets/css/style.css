@@ -110,6 +110,12 @@ a {
     border-radius: 10%;
 }
 
+.playersText {
+    margin: 13px;
+    padding-top: 10px;
+    color: white;
+}
+
 #player-selection {
     color: blue;
     width: 50%;
@@ -189,11 +195,15 @@ a {
     padding: 5px;
 }
 
-.playersText {
-    margin: 13px;
-    padding-top: 10px;
+h2 {
+    color: white;
+    text-align: center;
+}
+
+label {
     color: white;
 }
+
 
 @media only screen and (min-width: 320px) {
 /* index page */
