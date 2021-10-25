@@ -136,8 +136,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    margin: 25px 0 25px 0;
 }
 
 .rock {
@@ -238,10 +236,14 @@ label {
 /* game page */
     .playersText {
         font-size: 20px;
-    }    
+    }   
+
     .playerdisplay {
         font-size: 13px;
     }
+
+    
+
 }
 
 
