@@ -9,7 +9,12 @@
  const playerScoreDisplay = document.getElementById("pScore");
  const computerScoreDisplay = document.getElementById("cScore");
  const drawScoreDisplay = document.getElementById("dScore");
- 
+ /**
+  * model pop-ups
+  */
+const modal_box = document.getElementById("modal_box");
+const closeHomePage = document.getElementById("hpage");
+const closeNewGame = document.getElementById("newgame");
  
  let playerSelection = null;
  let computerSelection = null;
@@ -110,15 +115,26 @@
      }
  }
  
+
  function endGame() {
- 
-     if (computerScoreDisplay.innerHTML === "5") {
-         alert("You're not very good at this are you? :) Press 'New Game' and try again!!");
-     } else if (playerScoreDisplay.innerHTML === "5") {
-         alert("Well done, You've Won!!! Now get back to work! :)");
-     } else if (drawScoreDisplay.innerHTML === "5") {
-         alert("Awww... It's a draw. Press 'New Game' and keep trying!");
-     }
- 
+    if (computerScoreDisplay.innerHTML === "5") {
+        modal_box.classList.add("show");
+    } else if (playerScoreDisplay.innerHTML === "5") {
+        modal_box.classList.add("show");
+    } else if (drawScoreDisplay.innerHTML === "5") {
+        modal_box.classList.add("show");
+    }
  }
+
+//  function endGame() {
+ 
+//      if (computerScoreDisplay.innerHTML === "5") {
+//          alert("You're not very good at this are you? :) Press 'New Game' and try again!!");
+//      } else if (playerScoreDisplay.innerHTML === "5") {
+//          alert("Well done, You've Won!!! Now get back to work! :)");
+//      } else if (drawScoreDisplay.innerHTML === "5") {
+//          alert("Awww... It's a draw. Press 'New Game' and keep trying!");
+//      }
+ 
+//  }
  
