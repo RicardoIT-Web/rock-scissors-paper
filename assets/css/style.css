@@ -304,7 +304,7 @@ label {
     }
 
     .rule {
-        padding-top: 50px;
+        padding-top: 10px;
     }
 
     .rulestext1 {
@@ -313,6 +313,11 @@ label {
 
     img {
         width: 100px;
+    }
+
+    .startbtn {
+        width: 30%;
+        margin-left: 35%;
     }
 
 /* game page */
