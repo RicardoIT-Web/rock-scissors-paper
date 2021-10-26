@@ -296,15 +296,11 @@ label {
 @media only screen and (min-width: 1024px) {
 /* home page */
     .gamerules {
-        padding-top: 75px;
+        padding-top: 5px;
     }
 
     .rulestext2 {
         font-size: 25px;
-    }
-
-    .rule {
-        padding-top: 10px;
     }
 
     .rulestext1 {
@@ -312,12 +308,13 @@ label {
     }
 
     img {
-        width: 100px;
+        width: 125px;
     }
 
     .startbtn {
-        width: 30%;
-        margin-left: 35%;
+        width: 20%;
+        margin-left: 40%;
+        margin-bottom: 25px;
     }
 
 /* game page */
