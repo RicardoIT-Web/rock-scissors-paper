@@ -190,19 +190,15 @@ a {
     padding: 5px;
 }
 
-
-
 @media only screen and (min-width: 320px) {
 /* index page */
     .rules {
         margin-top: 15px;
     }
-
     .startbtn {
         width: 30%;
         margin-left: 35%;
     }
-
     .rulestext1 {
         padding-top: 15px;
     }
@@ -210,66 +206,70 @@ a {
 /* game page */
     .playersText {
         font-size: 20px;
-    }   
-
+    }
     .playerdisplay {
         font-size: 13px;
     }
-
     .btn {
         padding-bottom: 24px;
     }
-
     .paper {
         margin: 0px;
     }
 
 /* model pop-ups styling */
+    .modal-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        top: 178px;
+        left: 0;
+        right: 0;
+    }
+    .modal-box.show {
+        pointer-events:auto;
+        opacity: 1;
+    }
+    .modal {
+        background-color: #c7d4d9;
+        border-radius: 5px;
+        padding: 20px 5px;
+        text-align: center;
 
-.modal-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    top: 178px;
-    left: 0;
-    right: 0;
-}
-
-.modal-box.show {
-    pointer-events:auto;
-    opacity: 1;
-}
-
-.modal {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px 5px;
-    text-align: center;
-
-}
-
-.modal h1 {
-    color: darkblue;
-    font-size: 15px;
-}
-
-.modal p {
-    padding: 20px;
-    font-size: 15px;
-}
-
-button a {
-    text-decoration: none;
-}
-
-.popupbtn1 {
-    float: left;
-    margin-left: 8px;
+    }
+    .modal h1 {
+        color: darkblue;
+        font-size: 15px;
+    }
+    .modal p {
+        padding: 20px;
+        font-size: 15px;
+    }
+    button a {
+        text-decoration: none;
+    }
+    .popupbtn1 {
+        float: left;
+        margin-left: 8px;
+    }
+    #hpage {
+        background-color: white;
+        box-shadow: 1px 3px 3px darkred;
+        border-color: darkred;
+    }
+    #hpage a {
+        color: darkblue;
+        font-size: 13px;
+    }
+    #newgame {
+        color: darkgreen;
+        background-color: white;
+        box-shadow: 1px 3px 3px darkgreen;
+    }
 }
 
 @media only screen and (min-width: 360px) {
@@ -277,11 +277,9 @@ button a {
     .gamerules{
         margin-top: 12px;
     }
-
     .rules {
         margin-top: 10px;
     }
-
     .startbtn {
         margin-top: 5%;
         margin-bottom: 3%;
@@ -308,18 +306,23 @@ button a {
     .gamerules {
         padding-top: 45px;
     }
-
     .container {
         margin-top: 50px;
     }
-
     .playerdisplay {
         font-size: 20px;
     }
-
     .modal {
         padding: 20px 32px;
+    }
 
+}
+
+@media only screen and (min-width: 540px) {
+/* modal box */
+    .popupbtn1 {
+        float: left;
+        margin-left: 20px;
     }
 
 }
@@ -329,15 +332,12 @@ button a {
     .rules {
         margin-top: 50px;
     }
-
     .rulestext2 {
         font-size: 20px;
     }
-
     .rulestext1 {
         font-size: 20px;
     }
-
     img {
         width: 125px;
     }
@@ -354,19 +354,15 @@ button a {
     .gamerules {
         padding-top: 5px;
     }
-
     .rulestext2 {
         font-size: 25px;
     }
-
     .rulestext1 {
         font-size: 25px;
     }
-
     img {
         width: 125px;
     }
-
     .startbtn {
         width: 20%;
         margin-left: 40%;
@@ -377,21 +373,36 @@ button a {
     .playersText {
         font-size: 30px;
     }
-
     .selectionimgs {
         padding-top: 100px;
     }
-
     .rock {
         margin: 50px;
     }
-
     .scissors {
         margin: 50px;
     }
-
     .paper {
         margin: 50px;
+    }
+
+/* modal box */
+    .modal-box {
+        top: 305px;
+    }
+    .modal {
+        padding: 40px 100px;
+    }
+    .modal h1 {
+        font-size: 26px;
+    }
+    .modal p {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .popupbtn1 {
+        float: left;
+        margin-left: 25px;
     }
 
 }
