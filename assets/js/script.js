@@ -126,15 +126,4 @@ const closeNewGame = document.getElementById("newgame");
     }
  }
 
-//  function endGame() {
- 
-//      if (computerScoreDisplay.innerHTML === "5") {
-//          alert("You're not very good at this are you? :) Press 'New Game' and try again!!");
-//      } else if (playerScoreDisplay.innerHTML === "5") {
-//          alert("Well done, You've Won!!! Now get back to work! :)");
-//      } else if (drawScoreDisplay.innerHTML === "5") {
-//          alert("Awww... It's a draw. Press 'New Game' and keep trying!");
-//      }
- 
-//  }
  

@@ -197,13 +197,12 @@ a {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 200px;
-    right: 360px;
-    height: 50vh;
-    width: 50vw;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    top: 193px;
+    left: 0;
+    right: 0;
 }
 
 .modal-box.show {
@@ -215,10 +214,28 @@ a {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 600px;
-    max-width: 100%;
-    padding: 30px 50px;
+    padding: 20px 5px;
     text-align: center;
+
+}
+
+.modal h1 {
+    color: darkblue;
+    font-size: 15px;
+}
+
+.modal p {
+    padding: 20px;
+    font-size: 15px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.popupbtn1 {
+    float: left;
+    margin-left: 20px;
 }
 
 @media only screen and (min-width: 320px) {
@@ -248,7 +265,62 @@ a {
     .btn {
         padding-bottom: 24px;
     }
+/* modal pop-up
+    .modal-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 200px;
+        right: 360px;
+        height: 50vh;
+        width: 50vw;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+}
 
+    .modal-box.show {
+        pointer-events:auto;
+        opacity: 1;
+}
+
+    .modal {
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .popupbtn1 {
+        display: flex;
+        float: left;
+        padding-left: 55px;
+    }
+
+    .popupbtn2 {
+        display: flex;
+        float: right;
+        padding-right: 54px;
+    }
+*/
+}
+
+@media only screen and (min-width: 320px) {
+/* index page */
+    .gamerules{
+        margin-top: 12px;
+    }
+
+    .rules {
+        margin-top: 10px;
+    }
+
+    .startbtn {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
 }
 
 
