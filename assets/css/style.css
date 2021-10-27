@@ -190,6 +190,40 @@ a {
     padding: 5px;
 }
 
+
+
+@media only screen and (min-width: 320px) {
+/* index page */
+    .rules {
+        margin-top: 15px;
+    }
+
+    .startbtn {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .rulestext1 {
+        padding-top: 15px;
+    }
+
+/* game page */
+    .playersText {
+        font-size: 20px;
+    }   
+
+    .playerdisplay {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding-bottom: 24px;
+    }
+
+    .paper {
+        margin: 0px;
+    }
+
 /* model pop-ups styling */
 
 .modal-box {
@@ -200,7 +234,7 @@ a {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-    top: 193px;
+    top: 178px;
     left: 0;
     right: 0;
 }
@@ -235,79 +269,10 @@ button a {
 
 .popupbtn1 {
     float: left;
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
-@media only screen and (min-width: 320px) {
-/* index page */
-    .rules {
-        margin-top: 15px;
-    }
-
-    .startbtn {
-        width: 30%;
-        margin-left: 35%;
-    }
-
-    .rulestext1 {
-        padding-top: 15px;
-    }
-
-/* game page */
-    .playersText {
-        font-size: 20px;
-    }   
-
-    .playerdisplay {
-        font-size: 13px;
-    }
-
-    .btn {
-        padding-bottom: 24px;
-    }
-/* modal pop-up
-    .modal-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 200px;
-        right: 360px;
-        height: 50vh;
-        width: 50vw;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s ease;
-}
-
-    .modal-box.show {
-        pointer-events:auto;
-        opacity: 1;
-}
-
-    .modal {
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s ease;
-    }
-
-    .popupbtn1 {
-        display: flex;
-        float: left;
-        padding-left: 55px;
-    }
-
-    .popupbtn2 {
-        display: flex;
-        float: right;
-        padding-right: 54px;
-    }
-*/
-}
-
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 360px) {
 /* index page */
     .gamerules{
         margin-top: 12px;
@@ -321,6 +286,11 @@ button a {
         margin-top: 5%;
         margin-bottom: 3%;
     }
+
+/* game page */
+    .modal-box {
+        top: 190px;
+    }
 }
 
 
@@ -328,6 +298,9 @@ button a {
 
     .container {
         margin-top: 50px;
+    }
+    .modal-box {
+        top: 215px;
     }
 }
 
@@ -343,6 +316,12 @@ button a {
     .playerdisplay {
         font-size: 20px;
     }
+
+    .modal {
+        padding: 20px 32px;
+
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
