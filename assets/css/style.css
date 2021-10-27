@@ -258,17 +258,18 @@ a {
     }
     #hpage {
         background-color: white;
-        box-shadow: 1px 3px 3px darkred;
+        box-shadow: 1px 2px 2px darkred;
         border-color: darkred;
     }
     #hpage a {
-        color: darkblue;
+        color: darkred;
         font-size: 13px;
     }
     #newgame {
         color: darkgreen;
         background-color: white;
-        box-shadow: 1px 3px 3px darkgreen;
+        box-shadow: 1px 2px 2px darkgreen;
+        border-color: darkgreen
     }
 }
 
@@ -293,7 +294,7 @@ a {
 
 
 @media only screen and (min-width: 375px) {
-
+/* game page */
     .container {
         margin-top: 50px;
     }
@@ -303,9 +304,11 @@ a {
 }
 
 @media only screen and (min-width: 414px) {
+/* index Page */
     .gamerules {
         padding-top: 45px;
     }
+/* game page */
     .container {
         margin-top: 50px;
     }
@@ -319,7 +322,7 @@ a {
 }
 
 @media only screen and (min-width: 540px) {
-/* modal box */
+/* game page - modal box */
     .popupbtn1 {
         float: left;
         margin-left: 20px;
@@ -404,5 +407,4 @@ a {
         float: left;
         margin-left: 25px;
     }
-
 }

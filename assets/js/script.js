@@ -12,26 +12,28 @@
  /**
   * model pop-ups
   */
-const modal_box = document.getElementById("modal_box");
-const closeHomePage = document.getElementById("hpage");
-const closeNewGame = document.getElementById("newgame");
+ const modal_box = document.getElementById("modal_box");
+ const closeHomePage = document.getElementById("hpage");
+ const closeNewGame = document.getElementById("newgame");
  
  let playerSelection = null;
  let computerSelection = null;
  let result = null;
  
  /**
-  * add a click eventlistener to the available clickable options and trigger functions
+  * add a click event listener to the available clickable options and trigger functions
+  * and wait for DOMContent to load
   */
  
- availableSelections.forEach(input => {
-     input.addEventListener("click", (event) => {
-     playerSelection = event.target.name;
-     playerSelectionDisplay.innerHTML = playerSelection;
-     generateComputerSelection();
-     getResult();
-     trackScore();
-     endGame();
+ // document.addEventListener("DOMContentLoaded", function());
+    availableSelections.forEach(input => {
+        input.addEventListener("click", (event) => {
+        playerSelection = event.target.name;
+        playerSelectionDisplay.innerHTML = playerSelection;
+        generateComputerSelection();
+        getResult();
+        trackScore();
+        endGame();
      });
  });
  
@@ -54,7 +56,11 @@ const closeNewGame = document.getElementById("newgame");
  
      computerSelectionDisplay.innerHTML = computerSelection;
  }
- 
+
+/**
+ * function to assess and display results
+ */
+
  function getResult() {
      if (computerSelection === playerSelection) {
          result = "Its a Draw!";
@@ -80,41 +86,51 @@ const closeNewGame = document.getElementById("newgame");
  
      resultsDisplay.innerHTML = result;
  }
+
+/**
+ * function to monitor the scores and trigger score increment functions
+ */
+
+ function trackScore() {
  
- function incrementDrawScore() {
-     // increments draw score
- 
-     let currentDrawScore = parseInt(drawScoreDisplay.innerHTML);
-     let newDrawScore = currentDrawScore +1;
-     drawScoreDisplay.innerHTML = newDrawScore;
- }
+    let gameResult = resultsDisplay.innerHTML;
+    if (gameResult === "Its a Draw!") {
+        incrementDrawScore();
+    } else if (gameResult === "You Win!") {
+        incrementPlayerScore();
+    } else if (gameResult === "Computer Wins!") {
+        incrementComputerScore();
+    }
+}
+
+ /**
+ * function to increment all 3 scores
+ */
  
  function incrementPlayerScore() {
-     // increments player score
+
      let currentPlayerScore = parseInt(playerScoreDisplay.innerHTML); 
      let newPlayerScore = currentPlayerScore +1;
      playerScoreDisplay.innerHTML = newPlayerScore;
  }
  
  function incrementComputerScore() {
-     //increments Computer Score
+
      let currentComputerScore = parseInt(computerScoreDisplay.innerHTML); 
      let newComputerScore = currentComputerScore +1;
      computerScoreDisplay.innerHTML = newComputerScore;
  }
+
+ function incrementDrawScore() {
  
- function trackScore() {
- 
-     let gameResult = resultsDisplay.innerHTML;
-     if (gameResult === "Its a Draw!") {
-         incrementDrawScore();
-     } else if (gameResult === "You Win!") {
-         incrementPlayerScore();
-     } else if (gameResult === "Computer Wins!") {
-         incrementComputerScore();
-     }
- }
- 
+    let currentDrawScore = parseInt(drawScoreDisplay.innerHTML);
+    let newDrawScore = currentDrawScore +1;
+    drawScoreDisplay.innerHTML = newDrawScore;
+}
+
+ /**
+ * function to trigger modal box messages once any score reaches 5 points.
+ */
 
  function endGame() {
     if (computerScoreDisplay.innerHTML === "5") {
