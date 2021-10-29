@@ -1,4 +1,4 @@
-# Welcome to the Rock / Scissors / Paper Game
+# Welcome to Rock / Paper / Scissors
 
 ![Am I Responsive Design](assets/docs/READMEfiles/amiresponsive.jpg)
 
@@ -53,17 +53,27 @@ I am a prospective Rock Scisorrs Paper fan and want to be able to:
 
 ### _**The Home Page**_
 
-The first version of this game, the User will immediatley be presented with the game rules on the home page, explaining to the User the selections available and how to win points. 
+The first version of this game, the User will immediatley be presented with the game rules on the home page, explaining the User the selections available and how to win points. 
 
 ![Home Page Imgage](assets/docs/READMEfiles/homepageimg.jpg)
 
-The home page will also contain a "start" button which will direct the User to the "game page". 
+The home page will also contain a "start" button which will direct the User to the "Game Page". 
 
 Scrolling down on the home page the User will find a link which will direct the User to the website for the World Rock Paper Scissors Association [WRPS Association](https://wrpsa.com), which will open up on a new page. Here the User will find a complete set of rules and how to become a professional player.
 
 ![Link to WRPS Association](assets/docs/READMEfiles/externallinkimg.jpg)
 
+### _**The Game Page**_
 
+For this first release, the User will identify the player selections and results at the top of the game page.
+
+Below this section the User will identify three optional buttons to choose from, each button representing the choices available - "Rock", "Paper" and "Scissors".
+
+![The Game Page](assets/docs/READMEfiles/gamepageimg.jpg)
+
+Whatever selection is made by the User, the game will generate a random selection. If the User wins, this will be displayed on the reult line and 1 point will be added to the Player Score, illustrated on the scoreboard, which is placed below the buttons. If the User selection is the same as the Computer selection, this will result in a Draw and the 1 point will be added to the Draw scoreboard. Similarly, should the Computer win, 1 point will be added to the Computer scoredboard.
+
+The first player to reach 5 points will win the game.
 
 
 
