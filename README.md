@@ -1,5 +1,3 @@
-![GameImage](assets/docs/READMEfiles/mainimage.jpg)
-
 # Welcome to the Rock / Scissors / Paper Game
 
 ![Am I Responsive Design](assets/docs/READMEfiles/amiresponsive.jpg)
@@ -48,15 +46,22 @@ I am a prospective Rock Scisorrs Paper fan and want to be able to:
 * The modal popup will provide me with a choice of either starting a new game or returning to the home page.
 
 
+![GameImage](assets/docs/READMEfiles/mainimage.jpg)
+
+
 # Features
 
 ### _**The Home Page**_
 
 The first version of this game, the User will immediatley be presented with the game rules on the home page, explaining to the User the selections available and how to win points. 
 
-![image of home page](assets/docs/READMEfiles/homepageimg.jpg)
+![Home Page Imgage](assets/docs/READMEfiles/homepageimg.jpg)
 
-The home page will also contain a "start" button which will direct the User to the "game page". The home page also contains a link which will direct the User to a new tab opening up the site to the World Rock Paper Scissors Association [WRPS Association](https://wrpsa.com), where the User will find a complete set of rules and how to become a professional player.
+The home page will also contain a "start" button which will direct the User to the "game page". 
+
+Scrolling down on the home page the User will find a link which will direct the User to the website for the World Rock Paper Scissors Association [WRPS Association](https://wrpsa.com), which will open up on a new page. Here the User will find a complete set of rules and how to become a professional player.
+
+![Link to WRPS Association](assets/docs/READMEfiles/externallinkimg.jpg)
 
 
 
