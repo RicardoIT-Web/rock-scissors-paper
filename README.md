@@ -1,6 +1,10 @@
-# Welcome to Rock / Scissors / Paper Game
+![GameImage](assets/docs/READMEfiles/mainimage.jpg)
 
-This project was developed to satisfy the second Milestone Project requirements for the Full Stack Software Developement program at the [Code Institute](https://www.codeinstitute.net). As a second project, this site is created using HTML5, CSS3 and JavaScript languages.
+# Welcome to the Rock / Scissors / Paper Game
+
+![Am I Responsive Design](assets/docs/READMEfiles/amiresponsive.jpg)
+
+This project was developed to satisfy the second Milestone Project requirements for the Full Stack Software Developement program at the [Code Institute](https://www.codeinstitute.net). As a second project, this site is created using HTML5, CSS3 and JavaScript languages. This is a fully responsive website however the design is focussed more for playing on mobile phones and tablets for better UX.
 
 The purpose of this project is to demonstrate an understanding of how JavaScript is implemented and interpreted by the browser. In this example I have chosen to create a simple game of Rock / Scissors / Paper to demonstrate this understanding.
 
@@ -45,6 +49,19 @@ I am a prospective Rock Scisorrs Paper fan and want to be able to:
 
 
 # Features
+
+### _**The Home Page**_
+
+The first version of this game, the User will immediatley be presented with the game rules on the home page, explaining to the User the selections available and how to win points. 
+
+![image of home page](assets/docs/READMEfiles/homepageimg.jpg)
+
+The home page will also contain a "start" button which will direct the User to the "game page". The home page also contains a link which will direct the User to a new tab opening up the site to the World Rock Paper Scissors Association [WRPS Association](https://wrpsa.com), where the User will find a complete set of rules and how to become a professional player.
+
+
+
+
+
 
 # Wireframes
 
