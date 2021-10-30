@@ -71,11 +71,15 @@ Below this section the User will identify three optional buttons to choose from,
 
 ![The Game Page](assets/docs/READMEfiles/gamepageimg.jpg)
 
-Whatever selection is made by the User, the game will generate a random selection. If the User wins, this will be displayed on the reult line and 1 point will be added to the Player Score, illustrated on the scoreboard, which is placed below the buttons. If the User selection is the same as the Computer selection, this will result in a Draw and the 1 point will be added to the Draw scoreboard. Similarly, should the Computer win, 1 point will be added to the Computer scoredboard.
+Whatever selection is made by the User, the Computer will generate a random selection. If the User wins, this will be displayed on the reult line and 1 point will be added to the Player Score, illustrated on the scoreboard, which is placed below the selection images. If the User selection is the same as the Computer selection, this will result in a Draw and the 1 point will be added to the Draw scoreboard. Similarly, should the Computer win, 1 point will be added to the Computer scoredboard.
 
 The first player to reach 5 points will win the game.
 
+The game buttons will always remain visible and active in case the User wishes to interrupt the game before reaching the five point objective.
 
+Once the five points are reached, the User will see a modal pop-up appear which will prevent the User from making further selections of "Rock", "Paper", "Scissors" and the User will be prompted with a message and asked if they would like to return to the home page or continue playing.
+
+![modal pop-up](assets/docs/READMEfiles/modalpopupimg.jpg)
 
 
 # Wireframes
