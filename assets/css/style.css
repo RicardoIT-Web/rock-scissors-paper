@@ -203,7 +203,7 @@ a {
 
 /* game page */
     .playersText {
-        font-size: 20px;
+        font-size: 18px;
     }
     .playerdisplay {
         font-size: 13px;
@@ -235,7 +235,7 @@ a {
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
-        top: 190px;
+        top: 165px;
         left: 0;
         right: 0;
     }
@@ -255,37 +255,65 @@ a {
     }
     .modal h1 {
         color: darkblue;
-        font-size: 15px;
+        font-size: 18px;
     }
     .modal p {
         padding: 20px;
-        font-size: 15px;
+        font-size: 17px;
     }
     button a {
         text-decoration: none;
     }
     .popupbtn1 {
         float: left;
-        margin-left: 8px;
+        margin-left: 20px;
     }
     #hpage {
         text-decoration: none;
         color: darkred;
         background-color: white;
-        box-shadow: 1px 2px 2px darkred;
-        border-color: darkred;
+        box-shadow: 1px 2px 2px;
         border: solid darkred;
+        font-size: 15px;
+        margin: 0 6px 0 -5px;
     }
     #hpage a {
         color: darkred;
         font-size: 13px;
     }
-    #newgame {
-        color: darkgreen;
+    #staypage {
+        text-decoration: none;
         background-color: white;
-        box-shadow: 1px 2px 2px darkgreen;
-        border-color: darkgreen
+        border: solid darkgreen;
+        color: darkgreen;
+        box-shadow: 1px 2px 2px;
+        font-size: 15px;
     }
+    #staypage a {
+        color: darkred;
+        font-size: 13px;
+    }
+    #start-game-no {
+        text-decoration: none;
+        color: darkred;
+        background-color: white;
+        box-shadow: 1px 2px 2px;
+        border: solid darkred;
+        font-size: 15px;
+        margin: 0 3px 0 3px;
+        padding: 0 5px;
+    }
+    #start-game-yes {
+        text-decoration: none;
+        background-color: white;
+        border: solid darkgreen;
+        color: darkgreen;
+        box-shadow: 1px 2px 2px;
+        font-size: 15px;
+        margin: 0 -12px 0 0;
+        padding: 0 15px;
+    }
+
 }
 
 @media only screen and (min-width: 360px) {
@@ -303,7 +331,10 @@ a {
 
 /* game page */
     .modal-box {
-        top: 190px;
+        top: 165px;
+    }
+    .popupbtn1 {
+        margin-left: 20px;
     }
 }
 
@@ -314,7 +345,7 @@ a {
         margin-top: 50px;
     }
     .modal-box {
-        top: 215px;
+        top: 198px;
     }
 }
 

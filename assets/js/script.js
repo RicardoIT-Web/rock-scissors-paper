@@ -3,21 +3,23 @@
  */
 
  const PLAYER_SELECTION_DISPLAY = "player-selection";
- const computerSelectionDisplay = document.getElementById("computer-selection");
- const resultsDisplay = document.getElementById("result");
+ const COMPUTER_SELECTION_DISPLAY = "computer-selection";
+ const RESULT_DISPLAY = document.getElementById("result");
  const availableSelections = document.querySelectorAll("input");
  const playerScoreDisplay = document.getElementById("pScore");
  const computerScoreDisplay = document.getElementById("cScore");
  const drawScoreDisplay = document.getElementById("dScore");
- /**
-  * model pop-ups
-  */
- const modal_box = document.getElementById("modal_box");
- 
+
  let playerSelection = null;
  let computerSelection = null;
  let result = null;
  let isGameStarted = false;
+
+  /**
+  * model pop-ups
+  */
+   const modal_box = document.getElementById("modal_box");
+ 
  /**
   * add a click event listener to the available clickable options and trigger functions
   * and wait for DOMContent to load
@@ -28,6 +30,7 @@
         input.addEventListener("click", (event) => {
         playerSelection = event.target.name;
         document.getElementById(PLAYER_SELECTION_DISPLAY).innerHTML = playerSelection;
+        document.getElementById(COMPUTER_SELECTION_DISPLAY).innerHTML = computerSelection;
         generateComputerSelection();
         getResult();
         trackScore();
@@ -52,7 +55,7 @@
          computerSelection = "Paper";
      }
  
-     computerSelectionDisplay.innerHTML = computerSelection;
+     COMPUTER_SELECTION_DISPLAY.innerHTML = computerSelection;
  }
 
 /**
@@ -83,7 +86,7 @@
          result = "Computer Wins!";
      }
  
-     resultsDisplay.innerHTML = result;
+     RESULT_DISPLAY.innerHTML = result;
  }
 
 /**
@@ -92,7 +95,7 @@
 
  function trackScore() {
  
-    let gameResult = resultsDisplay.innerHTML;
+    let gameResult = RESULT_DISPLAY.innerHTML;
     if (gameResult === "Its a Draw!") {
         incrementDrawScore();
     } else if (gameResult === "You Win!") {
@@ -137,7 +140,7 @@
      } else if (playerScoreDisplay.innerHTML === "5") {
          displayMessage("You Win!!", "end-game-option");
      } else if (drawScoreDisplay.innerHTML === "5") {
-         displayMessage("Its A Draw!!", "end-game-option");
+         displayMessage("It's a Draw!!", "end-game-option");
      }
 }
 
@@ -152,11 +155,10 @@ function displayMessage(message, optionsId) {
 
 document.getElementById("startagain").addEventListener("click", (event) => {
     if (isGameStarted) {
-        displayMessage("restart?", "start-game-option");
+        displayMessage("Restart New Game?", "start-game-option");
     } else {
         location.reload();
     }
-    
 })
 
 document.getElementById("start-game-no").addEventListener("click", (event) => {
@@ -165,14 +167,5 @@ document.getElementById("start-game-no").addEventListener("click", (event) => {
 })
 
 
-//  function endGame() {
-//     if (computerScoreDisplay.innerHTML === "5") {
-//         modal_box.classList.add("show");
-//     } else if (playerScoreDisplay.innerHTML === "5") {
-//         modal_box.classList.add("show");
-//     } else if (drawScoreDisplay.innerHTML === "5") {
-//         modal_box.classList.add("show");
-//     }
-//  }
 
  
