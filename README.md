@@ -137,9 +137,15 @@ Other than this - no errors found.
 
 #### _**JShint Test**_
 
-JavaScript code checked with no errors identified
+JavaScript code checked with no errors identified.
 
 ![JSHint Check](assets/docs/READMEfiles/jshintcheck.jpg)
+
+#### _**Devtool Lighthouse Report**_
+
+Devtools Lighthouse Report showing optimum performance.
+
+![Devtool Lighthouse Report](assets/docs/READMEfiles/lighthousereport.jpg)
 
 # Unfixed Bugs
 
