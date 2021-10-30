@@ -117,7 +117,29 @@ I can confirm the the site link works well and that the text is legiable in all 
 
 #### _**HTML - W3C Test**_
 
+Home Page - Clean of Errors
+
+![W3C Home Page Test](assets/docs/READMEfiles/w3chomepagecheck.jpg)
+
+Game Page - Two Errors found
+
+![W3C Game Page Test](assets/docs/READMEfiles/w3cgamepagecheck.jpg)
+
+Game Page - Two Errors fixed
+
+#### _**CCS Test**_
+
+
+
+#### _**JShint Test**_
+
+JavaScript code checked with no errors identified
+
+![JSHint Check](assets/docs/READMEfiles/jshintcheck.jpg)
+
 # Unfixed Bugs
+
+There are no bugs identified on this version.
 
 # Deployment
 

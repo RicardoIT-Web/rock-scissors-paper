@@ -83,9 +83,9 @@ a {
     background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%); 
 }
 
-/* indexpage styling */
+/* game page styling */
 
-.rtnhpage {
+.btn a {
     margin-top: 10px;
     cursor: pointer;
     border: 1px solid black;
@@ -94,7 +94,7 @@ a {
     background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
 }
 
-.rtnhpage a {
+.rtnhpage {
     text-decoration: none;
     color: white;
 }
@@ -147,7 +147,6 @@ a {
 
 .scissors {
     transition: 100ms;
-    margin: 15px;
 }
 
 .scissors:hover {
@@ -156,7 +155,6 @@ a {
 
 .paper {
     transition: 100ms;
-    margin: 10px;
 }
 
 .paper:hover {
@@ -213,7 +211,18 @@ a {
     .btn {
         padding-bottom: 24px;
     }
+    .rock {
+        width: 80px;
+        height: 80px; 
+    }
+    .scissors {
+        width: 80px;
+        height: 80px;
+        margin: 25px; 
+    }
     .paper {
+        width: 80px;
+        height: 80px;
         margin: 0px;
     }
 
@@ -226,12 +235,12 @@ a {
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
-        top: 178px;
+        top: 190px;
         left: 0;
         right: 0;
     }
     .modal-box.show {
-        pointer-events:auto;
+        pointer-events: fill;
         opacity: 1;
     }
     .modal {
@@ -257,9 +266,12 @@ a {
         margin-left: 8px;
     }
     #hpage {
+        text-decoration: none;
+        color: darkred;
         background-color: white;
         box-shadow: 1px 2px 2px darkred;
         border-color: darkred;
+        border: solid darkred;
     }
     #hpage a {
         color: darkred;

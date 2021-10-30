@@ -13,8 +13,6 @@
   * model pop-ups
   */
  const modal_box = document.getElementById("modal_box");
- const closeHomePage = document.getElementById("hpage");
- const closeNewGame = document.getElementById("newgame");
  
  let playerSelection = null;
  let computerSelection = null;
