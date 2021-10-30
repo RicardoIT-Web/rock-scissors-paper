@@ -84,6 +84,19 @@ Once the five points are reached, the User will see a modal pop-up appear which 
 
 # Wireframes
 
+### _**Home Page**_
+
+![WireFrame Home Page](assets/docs/wireframes/wfhomepage.jpg)
+
+### _**Game Page**_
+
+![WireFrame Game Page](assets/docs/wireframes/wfgamepage.jpg)
+
+### _**Game Page with Modal Pop-up**_
+
+![WireFrame Modal Pop-up](assets/docs/wireframes/wfmodalpopup.jpg)
+
+
 # Typography and Color schemes
 
 # Testing
