@@ -2,7 +2,7 @@
  * Define fixed statements containing contents that do not change
  */
 
- const playerSelectionDisplay = document.getElementById("player-selection");
+ const PLAYER_SELECTION_DISPLAY = "player-selection";
  const computerSelectionDisplay = document.getElementById("computer-selection");
  const resultsDisplay = document.getElementById("result");
  const availableSelections = document.querySelectorAll("input");
@@ -17,7 +17,7 @@
  let playerSelection = null;
  let computerSelection = null;
  let result = null;
- 
+ let isGameStarted = false;
  /**
   * add a click event listener to the available clickable options and trigger functions
   * and wait for DOMContent to load
@@ -27,7 +27,7 @@
     availableSelections.forEach(input => {
         input.addEventListener("click", (event) => {
         playerSelection = event.target.name;
-        playerSelectionDisplay.innerHTML = playerSelection;
+        document.getElementById(PLAYER_SELECTION_DISPLAY).innerHTML = playerSelection;
         generateComputerSelection();
         getResult();
         trackScore();
@@ -60,6 +60,7 @@
  */
 
  function getResult() {
+    isGameStarted = true;
      if (computerSelection === playerSelection) {
          result = "Its a Draw!";
      }
@@ -131,13 +132,47 @@
  */
 
  function endGame() {
-    if (computerScoreDisplay.innerHTML === "5") {
-        modal_box.classList.add("show");
-    } else if (playerScoreDisplay.innerHTML === "5") {
-        modal_box.classList.add("show");
-    } else if (drawScoreDisplay.innerHTML === "5") {
-        modal_box.classList.add("show");
+     if (computerScoreDisplay.innerHTML === "5") {
+         displayMessage("Computer Wins!!", "end-game-option");
+     } else if (playerScoreDisplay.innerHTML === "5") {
+         displayMessage("You Win!!", "end-game-option");
+     } else if (drawScoreDisplay.innerHTML === "5") {
+         displayMessage("Its A Draw!!", "end-game-option");
+     }
+}
+
+function displayMessage(message, optionsId) {
+    document.getElementById("h1").innerHTML = message;
+    modal_box.classList.remove("hide");
+    modal_box.classList.add("show");
+    document.getElementById("end-game-option").classList.add("hide");
+    document.getElementById("start-game-option").classList.add("hide");
+    document.getElementById(optionsId).classList.remove("hide")
+}
+
+document.getElementById("startagain").addEventListener("click", (event) => {
+    if (isGameStarted) {
+        displayMessage("restart?", "start-game-option");
+    } else {
+        location.reload();
     }
- }
+    
+})
+
+document.getElementById("start-game-no").addEventListener("click", (event) => {
+    modal_box.classList.remove("show");
+    modal_box.classList.add("hide");
+})
+
+
+//  function endGame() {
+//     if (computerScoreDisplay.innerHTML === "5") {
+//         modal_box.classList.add("show");
+//     } else if (playerScoreDisplay.innerHTML === "5") {
+//         modal_box.classList.add("show");
+//     } else if (drawScoreDisplay.innerHTML === "5") {
+//         modal_box.classList.add("show");
+//     }
+//  }
 
  

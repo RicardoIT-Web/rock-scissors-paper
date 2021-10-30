@@ -38,7 +38,7 @@ h4 {
 }
 
 span {
-    color: green;
+    color: gold;
 }
 
 .rules {
@@ -91,7 +91,8 @@ a {
     border: 1px solid black;
     border-radius: 20px;
     font-size: 20px;
-    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);
+    padding: 6px; 
 }
 
 .rtnhpage {
@@ -208,7 +209,7 @@ a {
         font-size: 13px;
     }
     .btn {
-        padding-bottom: 24px;
+        padding-bottom: 45px;
     }
     .rock {
         width: 80px;
@@ -237,6 +238,9 @@ a {
         top: 190px;
         left: 0;
         right: 0;
+    }
+    .hide {
+        display: none;
     }
     .modal-box.show {
         pointer-events: fill;

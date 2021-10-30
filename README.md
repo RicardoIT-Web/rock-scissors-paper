@@ -129,11 +129,13 @@ Game Page - Two Errors fixed
 
 #### _**CCS Test**_
 
-One error found on the CSS Validator test which is not an error but simply a message to state Fonts from external sources are not validated.
-
-Other than this - no errors found.
+One error found on the CSS Validator test and one warning states that external fonts are not assessed using the direct input option on the validator.
 
 ![CSS Validator Check](assets/docs/READMEfiles/w3ccsscheck.jpg)
+
+Font-Size removed as not required and using the URL for the deployed site cleared all errors.
+
+![CSS Validator Check](assets/docs/READMEfiles/w3ccsscheckcleared.jpg)
 
 #### _**JShint Test**_
 

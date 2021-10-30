@@ -37,7 +37,7 @@
     </div>
 <!-- buttons -->
     <div class="btn">
-        <button class="startagain" onclick="location.reload();">New Game</button>
+        <button id="startagain" class="startagain">New Game</button>
     </div>
 
     <div class="btn"> 
@@ -47,14 +47,26 @@
   
     <div class="modal-box" id="modal_box">
         <div class="modal">
-            <h1>Are You Enjoying The Game?</h1>
+            <h1 id="h1">Are You Enjoying The Game?</h1>
             <p>Back to home page or continue playing?</p>
+
+        <div id="end-game-option">
             <div class="popupbtn1">
                 <a href="index.html" id="hpage">Back to Home Page</a>
             </div>
             <div class="popupbtn2">
                 <button id="newgame" onclick="location.reload();">Continue Playing</button>
             </div>
+        </div>
+        
+        <div id="start-game-option">
+            <div class="popupbtn1">
+                <button id="start-game-no">No</button>
+            </div>
+            <div class="popupbtn2">
+                <button id="start-game-yes" onclick="location.reload();">Yes</button>
+            </div>
+        </div>
         </div>
     </div>
 
