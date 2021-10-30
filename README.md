@@ -129,7 +129,11 @@ Game Page - Two Errors fixed
 
 #### _**CCS Test**_
 
+One error found on the CSS Validator test which is not an error but simply a message to state Fonts from external sources are not validated.
 
+Other than this - no errors found.
+
+![CSS Validator Check](assets/docs/READMEfiles/w3ccsscheck.jpg)
 
 #### _**JShint Test**_
 
@@ -143,8 +147,25 @@ There are no bugs identified on this version.
 
 # Deployment
 
+* This site was deployed to GitHub pages. Steps taken to deploy;
+
+    * In GitHub repository click settings tab.
+    * From the source section dropdown menu, select main branch.
+    * Once complete the page provided the deployed site link.
+
+Deployed site link - [Rock/Paper/Scissors Game](https://ricardoit-web.github.io/rock-scissors-paper/)
+
 # Credits
 
-### _**Content**_
-
 ### _**Media**_
+
+* Images were taken from Google Images
+
+* Other support received from site below;
+
+    * www.w3schools.com 
+    * www.developer.mozilla.org
+    * www.css-tricks.com
+    * www.getbootstrap.com
+    * www.whatismyviewport.com
+    * www.stackoverflow.com
