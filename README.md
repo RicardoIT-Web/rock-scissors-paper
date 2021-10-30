@@ -99,7 +99,19 @@ Once the five points are reached, the User will see a modal pop-up appear which 
 
 # Typography and Color schemes
 
+The font used throughout this site is Montserrat. Open-sans is used as the fallback font.
+
+The color schemes are chosen to enhance player selection buttons with a background in dark grey to avoid any distractions from the rules text and player and computer selection results.
+
+The modal Pop-up is of a light color which will cover the player selection buttons with the aim on focussing the player to the modal pop-up. The modal pop-up contains two buttons of diffrerent color, red styling to return to home page and green color to continue playing more games.
+
 # Testing
+
+I tested this site on both IE and Google Chrome browsres and can confirm that it works on both browsers.
+
+I can confirm that this project is responsive, it looks good on the screens provided by the devtools.
+
+I can confirm the the site link works well and that the text is legiable in all settings.
 
 ### _**Validator Testing**_
 
