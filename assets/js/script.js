@@ -4,8 +4,8 @@
 
 const PLAYER_SELECTION_DISPLAY = "player-selection";
 const COMPUTER_SELECTION_DISPLAY = "computer-selection";
-const RESULT_DISPLAY = document.getElementById("result");
-const availableSelections = document.querySelectorAll("input");
+const RESULT_DISPLAY = "result";
+const AVAILABLE_SELECTIONS = document.querySelectorAll("input");
 const playerScoreDisplay = document.getElementById("pScore");
 const computerScoreDisplay = document.getElementById("cScore");
 const drawScoreDisplay = document.getElementById("dScore");
@@ -19,7 +19,6 @@ let isGameStarted = false;
  * model pop-ups
  */
 const modal_box = document.getElementById("modal_box");
-
 
 /**
  * function to generate comupter selections
@@ -61,7 +60,7 @@ function getResult() {
         result = "Computer Wins!";
     }
 
-    RESULT_DISPLAY.innerHTML = result;
+    document.getElementById(RESULT_DISPLAY).innerHTML = result;
 }
 
 /**
@@ -70,7 +69,7 @@ function getResult() {
 
 function trackScore() {
 
-    let gameResult = RESULT_DISPLAY.innerHTML;
+    let gameResult = result;
     if (gameResult === "Its a Draw!") {
         incrementDrawScore();
     } else if (gameResult === "You Win!") {
@@ -130,7 +129,7 @@ function displayMessage(message, optionsId) {
 }
 
 function initializeGame() {
-    availableSelections.forEach(input => {
+    AVAILABLE_SELECTIONS.forEach(input => {
         input.addEventListener("click", (event) => {
             playerSelection = event.target.name;
             document.getElementById(PLAYER_SELECTION_DISPLAY).innerHTML = playerSelection;
