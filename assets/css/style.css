@@ -287,11 +287,16 @@ a {
         box-shadow: 1px 2px 2px;
         border: solid darkred;
         font-size: 15px;
-        padding: 5px;
+        padding: 5px 15px 5px 15px;
     }
-    #hpage a {
-        color: darkred;
-        font-size: 13px;
+    .hpage {
+        text-decoration: none;
+        background-color: white;
+        border: solid darkgreen;
+        color: darkgreen;
+        box-shadow: 1px 2px 2px;
+        font-size: 15px;
+        padding: 5px;
     }
     #staypage {
         text-decoration: none;
@@ -367,6 +372,18 @@ a {
     .popupbtn1 {
         margin-left: 20px;
     }
+
+/* modal box */
+    #hpage {
+        margin-left: 18px;
+    }
+    #start-game-no {
+        padding: 0 34px;
+        margin-left: 28px;
+    }
+    #return-home-no {
+        margin-left: 40px;
+    }
 }
 
 
@@ -377,6 +394,21 @@ a {
     }
     .modal-box {
         top: 198px;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+/* modal box */ 
+    .modal {
+        padding: 20px 32px;
+        width: 95%;
+        height: 180px;
+    }
+    .popupbtn1 {
+        margin: 0 37px 0 0;
+    }
+    #scoreboard {
+        padding-top: 52px;
     }
 }
 
@@ -392,10 +424,18 @@ a {
     .playerdisplay {
         font-size: 20px;
     }
+    #scoreboard {
+        padding-top: 52px;
+    }
+/* modal box */    
     .modal {
         padding: 20px 32px;
+        width: 95%;
+        height: 195px;
     }
-
+    .popupbtn1 {
+        margin: 0 37px 0 0;
+    }
 }
 
 @media only screen and (min-width: 540px) {
@@ -404,7 +444,10 @@ a {
         float: left;
         margin-left: 20px;
     }
-
+/* modal box */
+    .modal {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -423,19 +466,45 @@ a {
     }
 
 /* game page */
+    .playersText {
+        font-size: 25px;
+    }
+    .selectionimgs {
+        margin-top: 50px;
+    }
+    .scissors {
+        margin: 25px 65px;
+    }
+/* modal box */
+    .modal {
+        margin-top: 40px;
+        width: 75%;
+    }
+    .popupbtn1 {
+        margin-left: 65px;
+    }
+    #start-game-yes {
+        font-size: 20px;
+    }
+    #start-game-no {
+        font-size: 20px;
+    }
+/* new game button */
     .btn {
         margin-top: 20px;
     }
-
 }
 
 @media only screen and (min-width: 1024px) {
 /* home page */
     .gamerules {
-        padding-top: 5px;
+        margin-top: 100px;
     }
     .rulestext2 {
-        font-size: 25px;
+        font-size: 30px;
+    }
+    .rules {
+        margin: 100px;
     }
     .rulestext1 {
         font-size: 25px;
@@ -448,40 +517,72 @@ a {
         margin-left: 40%;
         margin-bottom: 25px;
     }
+    .startbtn a {
+        font-size: 33px;
+    }
 
 /* game page */
     .playersText {
         font-size: 30px;
     }
     .selectionimgs {
-        padding-top: 100px;
+        padding-top: 60px;
     }
     .rock {
         margin: 50px;
+        width: 125px;
+        height: 125px;
     }
     .scissors {
         margin: 50px;
+        width: 125px;
+        height: 125px;
     }
     .paper {
         margin: 50px;
+        width: 125px;
+        height: 125px;
+    }
+    .startagain {
+        font-size: 30px;
+    }
+    .rtnhpage {
+        font-size: 30px;
     }
 
 /* modal box */
     .modal-box {
-        top: 305px;
+        top: 280px;
     }
     .modal {
-        padding: 40px 100px;
+        height: 235px;
+        padding: 30px 100px;
     }
     .modal h1 {
         font-size: 26px;
     }
-    .modal p {
-        font-size: 17px;
-        margin-bottom: 5px;
-    }
     .popupbtn1 {
         float: left;
         margin-left: 25px;
+    }
+    #hpage {
+        font-size: 25px;
+    }
+    #staypage {
+        font-size: 25px;
+        margin-left: 65px;
+    }
+    #start-game-no {
+        font-size: 25px;
+        margin-right: 135px;
+    }
+    #start-game-yes {
+        font-size: 25px;
+    }
+    .hpage {
+        font-size: 25px;
+    }
+    #return-home-no {
+        font-size: 25px;
     }
 }
