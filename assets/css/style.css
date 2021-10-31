@@ -14,7 +14,7 @@ body {
 
 /* homepage styling */
 
-.gamerules{
+.gamerules {
     text-align: center;
     color: white;
     margin-top: 20px;
@@ -26,13 +26,13 @@ h4 {
     padding: 2px;
 }
 
-.rulestext1{
+.rulestext1 {
     text-align: center;
     padding: 10px;
     color: white;
 }
 
-.rulestext2{
+.rulestext2 {
     text-align: center;
     color: white;
 }
@@ -80,7 +80,7 @@ a {
     margin-left: 40%;
     margin-top: 7%;
     margin-bottom: 5%;
-    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%); 
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);
 }
 
 .startbtn:active {
@@ -126,7 +126,7 @@ a {
 
 #computer-selection {
     color: red;
-    
+
 }
 
 #result {
@@ -188,7 +188,7 @@ a {
     border: 1px solid black;
     border-radius: 20px;
     font-size: 20px;
-    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);   
+    background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%);
     color: white;
     padding: 5px;
 }
@@ -198,44 +198,52 @@ a {
 }
 
 @media only screen and (min-width: 320px) {
-/* index page */
+
+    /* index page */
     .rules {
         margin-top: 15px;
     }
+
     .startbtn {
         width: 30%;
         margin-left: 35%;
     }
+
     .rulestext1 {
         padding-top: 15px;
     }
 
-/* game page */
+    /* game page */
     .playersText {
         font-size: 18px;
     }
+
     .playerdisplay {
         font-size: 13px;
     }
+
     .btn {
         padding-bottom: 45px;
     }
+
     .rock {
         width: 80px;
-        height: 80px; 
+        height: 80px;
     }
+
     .scissors {
         width: 80px;
         height: 80px;
-        margin: 25px; 
+        margin: 25px;
     }
+
     .paper {
         width: 80px;
         height: 80px;
         margin: 0px;
     }
 
-/* model pop-ups styling */
+    /* model pop-ups styling */
     .modal-box {
         display: flex;
         align-items: center;
@@ -248,13 +256,16 @@ a {
         left: 0;
         right: 0;
     }
+
     .hide {
         display: none;
     }
+
     .modal-box.show {
         pointer-events: fill;
         opacity: 1;
     }
+
     .modal {
         background-color: #c7d4d9;
         border-radius: 5px;
@@ -263,23 +274,28 @@ a {
         text-align: center;
 
     }
+
     .modal h1 {
         color: darkblue;
         font-size: 22px;
         padding-top: 25px;
         padding-bottom: 47px;
     }
+
     .modal p {
         padding: 20px;
         font-size: 17px;
     }
+
     button a {
         text-decoration: none;
     }
+
     .popupbtn1 {
         float: left;
         margin-left: 20px;
     }
+
     #hpage {
         text-decoration: none;
         color: darkred;
@@ -289,6 +305,7 @@ a {
         font-size: 15px;
         padding: 5px 15px 5px 15px;
     }
+
     .hpage {
         text-decoration: none;
         background-color: white;
@@ -298,6 +315,7 @@ a {
         font-size: 15px;
         padding: 5px;
     }
+
     #staypage {
         text-decoration: none;
         background-color: white;
@@ -307,10 +325,12 @@ a {
         font-size: 15px;
         padding: 5px;
     }
+
     #staypage a {
         color: darkred;
         font-size: 13px;
     }
+
     #start-game-no {
         text-decoration: none;
         color: darkred;
@@ -321,6 +341,7 @@ a {
         margin: 0 3px 0 22px;
         padding: 0 30px;
     }
+
     #start-game-yes {
         text-decoration: none;
         background-color: white;
@@ -331,6 +352,7 @@ a {
         margin: 0 -12px 0 0;
         padding: 0 15px;
     }
+
     #return-home-no {
         text-decoration: none;
         color: darkred;
@@ -340,6 +362,7 @@ a {
         font-size: 15px;
         padding: 2px 25px;
     }
+
     .popupbtn2 a {
         text-decoration: none;
         color: darkgreen;
@@ -353,34 +376,40 @@ a {
 }
 
 @media only screen and (min-width: 360px) {
-/* index page */
-    .gamerules{
+
+    /* index page */
+    .gamerules {
         margin-top: 12px;
     }
+
     .rules {
         margin-top: 10px;
     }
+
     .startbtn {
         margin-top: 5%;
         margin-bottom: 3%;
     }
 
-/* game page */
+    /* game page */
     .modal-box {
         top: 165px;
     }
+
     .popupbtn1 {
         margin-left: 20px;
     }
 
-/* modal box */
+    /* modal box */
     #hpage {
         margin-left: 18px;
     }
+
     #start-game-no {
         padding: 0 34px;
         margin-left: 28px;
     }
+
     #return-home-no {
         margin-left: 40px;
     }
@@ -388,201 +417,268 @@ a {
 
 
 @media only screen and (min-width: 375px) {
-/* game page */
+
+    /* game page */
     .container {
         margin-top: 50px;
     }
+
     .modal-box {
         top: 198px;
     }
 }
 
 @media only screen and (min-width: 411px) {
-/* modal box */ 
+
+    /* modal box */
     .modal {
         padding: 20px 32px;
         width: 95%;
         height: 180px;
     }
+
     .popupbtn1 {
         margin: 0 37px 0 0;
     }
+
     #scoreboard {
         padding-top: 52px;
     }
 }
 
 @media only screen and (min-width: 414px) {
-/* index Page */
+
+    /* index Page */
     .gamerules {
         padding-top: 45px;
     }
-/* game page */
+
+    /* game page */
     .container {
         margin-top: 50px;
     }
+
     .playerdisplay {
         font-size: 20px;
     }
+
     #scoreboard {
         padding-top: 52px;
     }
-/* modal box */    
+
+    /* modal box */
     .modal {
         padding: 20px 32px;
         width: 95%;
         height: 195px;
     }
+
     .popupbtn1 {
         margin: 0 37px 0 0;
     }
 }
 
 @media only screen and (min-width: 540px) {
-/* game page - modal box */
+
+    /* game page - modal box */
     .popupbtn1 {
         float: left;
         margin-left: 20px;
     }
-/* modal box */
+
+    /* modal box */
     .modal {
         width: 80%;
     }
 }
 
-@media only screen and (min-width: 768px) {
-/* home page */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* home page */
     .rules {
         margin-top: 50px;
     }
+
     .rulestext2 {
         font-size: 20px;
     }
+
     .rulestext1 {
         font-size: 20px;
     }
+
     img {
         width: 125px;
     }
 
-/* game page */
+    /* game page */
     .playersText {
         font-size: 25px;
     }
+
     .selectionimgs {
         margin-top: 50px;
     }
+
     .scissors {
         margin: 25px 65px;
     }
-/* modal box */
+
+    /* modal box */
     .modal {
         margin-top: 40px;
         width: 75%;
     }
+
     .popupbtn1 {
         margin-left: 65px;
     }
+
     #start-game-yes {
         font-size: 20px;
     }
+
     #start-game-no {
         font-size: 20px;
     }
-/* new game button */
+
+    /* new game button */
     .btn {
         margin-top: 20px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-/* home page */
+
+    /* home page */
     .gamerules {
         margin-top: 100px;
     }
+
     .rulestext2 {
         font-size: 30px;
     }
+
     .rules {
         margin: 100px;
     }
+
     .rulestext1 {
         font-size: 25px;
     }
+
     img {
         width: 125px;
     }
+
     .startbtn {
         width: 20%;
         margin-left: 40%;
         margin-bottom: 25px;
     }
+
     .startbtn a {
         font-size: 33px;
     }
 
-/* game page */
+    /* game page */
     .playersText {
         font-size: 30px;
     }
+
     .selectionimgs {
         padding-top: 60px;
     }
+
     .rock {
         margin: 50px;
-        width: 125px;
-        height: 125px;
-    }
-    .scissors {
-        margin: 50px;
-        width: 125px;
-        height: 125px;
-    }
-    .paper {
-        margin: 50px;
-        width: 125px;
-        height: 125px;
-    }
-    .startagain {
-        font-size: 30px;
-    }
-    .rtnhpage {
-        font-size: 30px;
+        width: 100px;
+        height: 100px;
     }
 
-/* modal box */
+    .scissors {
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .paper {
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .startagain {
+        font-size: 25px;
+    }
+
+    .rtnhpage {
+        font-size: 25px;
+    }
+
+    /* modal box */
     .modal-box {
         top: 280px;
     }
+
     .modal {
         height: 235px;
         padding: 30px 100px;
     }
+
     .modal h1 {
         font-size: 26px;
     }
+
     .popupbtn1 {
         float: left;
         margin-left: 25px;
     }
+
     #hpage {
-        font-size: 25px;
+        font-size: 20px;
+        margin-left: 55px;
     }
+
     #staypage {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 65px;
     }
+
     #start-game-no {
-        font-size: 25px;
+        font-size: 20px;
         margin-right: 135px;
     }
+
     #start-game-yes {
-        font-size: 25px;
+        font-size: 20px;
     }
+
     .hpage {
-        font-size: 25px;
+        font-size: 20px;
     }
+
     #return-home-no {
-        font-size: 25px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* modal box */
+    #hpage {
+        margin-left: 95px;
+    }
+
+    .popupbtn1 {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+
+    /* modal box */
+    .popupbtn1 {
+        margin-left: 88px;
     }
 }

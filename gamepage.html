@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,75 +12,79 @@
 </head>
 
 <body>
-<!-- display of player choices and results-->
+    <!-- display of player choices and results-->
     <div class="container">
         <h1 class="playersText">Player Selection: <span id="player-selection"></span></h1>
         <h1 class="playersText">Computer Selection: <span id="computer-selection"></span></h1>
-        <h1 class="playersText">Result:  <span id="result"></span></h1>
+        <h1 class="playersText">Result: <span id="result"></span></h1>
     </div>
-<!-- image buttons -->
+    <!-- image buttons -->
     <div class="selectionimgs">
-        <input class="rock" type="image" src="assets/images/rockup.jpg" name="Rock" width="100" height="100" alt="button to select Rock">
-        <input class="scissors" type="image" src="assets/images/scissorsup.jpg" name="Scissors" width="100" height="100" alt="button to select Scissors">
-        <input class="paper" type="image" src="assets/images/paperup.jpg" name="Paper" width="100" height="100" alt="button to select Paper">
+        <input class="rock" type="image" src="assets/images/rockup.jpg" name="Rock" width="100" height="100"
+            alt="button to select Rock">
+        <input class="scissors" type="image" src="assets/images/scissorsup.jpg" name="Scissors" width="100" height="100"
+            alt="button to select Scissors">
+        <input class="paper" type="image" src="assets/images/paperup.jpg" name="Paper" width="100" height="100"
+            alt="button to select Paper">
     </div>
-<!-- scoreboard display -->
+    <!-- scoreboard display -->
     <div id="scoreboard">
-        <div class="playerdisplay">Player: 
+        <div class="playerdisplay">Player:
             <span id="pScore" class="score">0</span>
         </div>
-        <div class="playerdisplay">Computer:  
+        <div class="playerdisplay">Computer:
             <span id="cScore" class="score">0</span>
         </div>
-        <div class="playerdisplay">Draw:  
+        <div class="playerdisplay">Draw:
             <span id="dScore" class="score">0</span>
         </div>
     </div>
-<!-- buttons -->
+    <!-- buttons -->
     <div class="btn">
         <button id="startagain" class="startagain">New Game</button>
     </div>
 
-    <div class="btn"> 
-        <button id="return-home" class="rtnhpage">Back to Home Page</button>    
+    <div class="btn">
+        <button id="return-home" class="rtnhpage">Back to Home Page</button>
     </div>
 
-<!-- modal box --> 
+    <!-- modal box -->
     <div class="modal-box" id="modal_box">
         <div class="modal">
             <h1 id="h1"></h1>
 
-        <div id="end-game-option">
-            <div class="popupbtn1">
-                <a href="index.html" id="hpage">Home Page</a>
+            <div id="end-game-option">
+                <div class="popupbtn1">
+                    <a href="index.html" id="hpage">Home Page</a>
+                </div>
+                <div class="popupbtn2">
+                    <a href="#" id="staypage" onclick="location.reload();">Continue Playing</a>
+                </div>
             </div>
-            <div class="popupbtn2">
-                <a href="#" id="staypage" onclick="location.reload();">Continue Playing</a>
-            </div>
-        </div>
-        
-        <div id="start-game-option">
-            <div class="popupbtn1">
-                <button id="start-game-no">No</button>
-            </div>
-            <div class="popupbtn2">
-                <button id="start-game-yes" onclick="location.reload();">Restart</button>
-            </div>
-        </div>
 
-        <div id="return-home-option">
-            <div class="popupbtn1">
-                <button id="return-home-no">No</button>
+            <div id="start-game-option">
+                <div class="popupbtn1">
+                    <button id="start-game-no">No</button>
+                </div>
+                <div class="popupbtn2">
+                    <button id="start-game-yes" onclick="location.reload();">Restart</button>
+                </div>
             </div>
-            <div class="popupbtn2">
-                <a href="index.html" class="hpage" id="hpage">Yes</a>
+
+            <div id="return-home-option">
+                <div class="popupbtn1">
+                    <button id="return-home-no">No</button>
+                </div>
+                <div class="popupbtn2">
+                    <a href="index.html" class="hpage" id="hpage">Yes</a>
+                </div>
             </div>
-        </div>
 
         </div>
     </div>
 
-<!--link to Javascript sheet at the botton so its the last item to load on the brwoser-->
+    <!--link to Javascript sheet at the botton so its the last item to load on the brwoser-->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
