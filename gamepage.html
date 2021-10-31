@@ -41,18 +41,17 @@
     </div>
 
     <div class="btn"> 
-        <a href="index.html" class="rtnhpage">Back to Home Page</a>
+        <button id="return-home" class="rtnhpage">Back to Home Page</button>    
     </div>
 
 <!-- modal box --> 
     <div class="modal-box" id="modal_box">
         <div class="modal">
             <h1 id="h1"></h1>
-            <p>Back to home page or continue playing?</p>
 
         <div id="end-game-option">
             <div class="popupbtn1">
-                <a href="index.html" id="hpage">Back to Home Page</a>
+                <a href="index.html" id="hpage">Home Page</a>
             </div>
             <div class="popupbtn2">
                 <a href="#" id="staypage" onclick="location.reload();">Continue Playing</a>
@@ -67,6 +66,16 @@
                 <button id="start-game-yes" onclick="location.reload();">Restart</button>
             </div>
         </div>
+
+        <div id="return-home-option">
+            <div class="popupbtn1">
+                <button id="return-home-no">No</button>
+            </div>
+            <div class="popupbtn2">
+                <a href="index.html" id="hpage">Yes</a>
+            </div>
+        </div>
+
         </div>
     </div>
 

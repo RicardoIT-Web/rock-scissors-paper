@@ -83,6 +83,10 @@ a {
     background: linear-gradient(to bottom, brown 5%, rgb(223, 120, 120) 100%); 
 }
 
+.startbtn:active {
+    transform: scale(0.85);
+}
+
 /* game page styling */
 
 .btn a {
@@ -98,7 +102,10 @@ a {
 .rtnhpage {
     text-decoration: none;
     color: white;
+    transition: 0.85s;
 }
+
+
 
 .container {
     width: 90%;
@@ -276,6 +283,7 @@ a {
         border: solid darkred;
         font-size: 15px;
         margin: 0 6px 0 -5px;
+        padding: 4px;
     }
     #hpage a {
         color: darkred;
@@ -288,6 +296,7 @@ a {
         color: darkgreen;
         box-shadow: 1px 2px 2px;
         font-size: 15px;
+        padding: 4px;
     }
     #staypage a {
         color: darkred;
