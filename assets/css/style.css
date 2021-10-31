@@ -265,9 +265,9 @@ a {
     }
     .modal h1 {
         color: darkblue;
-        font-size: 25px;
+        font-size: 22px;
         padding-top: 25px;
-        padding-bottom: 65px;
+        padding-bottom: 47px;
     }
     .modal p {
         padding: 20px;
@@ -313,8 +313,8 @@ a {
         box-shadow: 1px 2px 2px;
         border: solid darkred;
         font-size: 15px;
-        margin: 0 3px 0 3px;
-        padding: 0 5px;
+        margin: 0 3px 0 22px;
+        padding: 0 30px;
     }
     #start-game-yes {
         text-decoration: none;
@@ -325,6 +325,24 @@ a {
         font-size: 15px;
         margin: 0 -12px 0 0;
         padding: 0 15px;
+    }
+    #return-home-no {
+        text-decoration: none;
+        color: darkred;
+        background-color: white;
+        box-shadow: 1px 2px 2px;
+        border: solid darkred;
+        font-size: 15px;
+        padding: 2px 25px;
+    }
+    .popupbtn2 a {
+        text-decoration: none;
+        color: darkgreen;
+        background-color: white;
+        box-shadow: 1px 2px 2px;
+        border: solid darkgreen;
+        font-size: 15px;
+        padding: 2px 25px;
     }
 
 }
