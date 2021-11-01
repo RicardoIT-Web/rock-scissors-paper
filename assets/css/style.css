@@ -621,8 +621,8 @@ a {
     }
 
     .modal {
+        width: 50%;
         height: 235px;
-        padding: 30px 100px;
     }
 
     .modal h1 {
@@ -631,7 +631,6 @@ a {
 
     .popupbtn1 {
         float: left;
-        margin-left: 25px;
     }
 
     #hpage {
@@ -641,7 +640,6 @@ a {
 
     #staypage {
         font-size: 20px;
-        margin-left: 65px;
     }
 
     #start-game-no {
@@ -659,6 +657,7 @@ a {
 
     #return-home-no {
         font-size: 20px;
+        margin: 0;
     }
 }
 
