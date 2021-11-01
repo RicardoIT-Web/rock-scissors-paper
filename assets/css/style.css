@@ -281,11 +281,6 @@ a {
         padding-bottom: 47px;
     }
 
-    .modal p {
-        padding: 20px;
-        font-size: 17px;
-    }
-
     button a {
         text-decoration: none;
     }
@@ -297,19 +292,19 @@ a {
 
     #hpage {
         text-decoration: none;
-        color: darkred;
+        color: rgb(66, 66, 240);
         background-color: white;
         box-shadow: 1px 2px 2px;
-        border: solid darkred;
+        border: solid rgb(66, 66, 240);
         font-size: 15px;
-        padding: 5px 15px 5px 15px;
+        display: flex;
     }
 
     .hpage {
         text-decoration: none;
         background-color: white;
-        border: solid darkgreen;
-        color: darkgreen;
+        border: solid rgb(66, 66, 240);
+        color: rgb(66, 66, 240);
         box-shadow: 1px 2px 2px;
         font-size: 15px;
         padding: 5px;
@@ -318,24 +313,24 @@ a {
     #staypage {
         text-decoration: none;
         background-color: white;
-        border: solid darkgreen;
-        color: darkgreen;
+        border: solid rgb(66, 66, 240);
+        color: rgb(66, 66, 240);
         box-shadow: 1px 2px 2px;
         font-size: 15px;
-        padding: 5px;
+        padding: 0 5px 0 5px;
     }
 
     #staypage a {
-        color: darkred;
+        color: rgb(66, 66, 240);
         font-size: 13px;
     }
 
     #start-game-no {
         text-decoration: none;
-        color: darkred;
+        color: rgb(66, 66, 240);
         background-color: white;
         box-shadow: 1px 2px 2px;
-        border: solid darkred;
+        border: solid rgb(66, 66, 240);
         font-size: 15px;
         margin: 0 3px 0 22px;
         padding: 0 30px;
@@ -344,8 +339,8 @@ a {
     #start-game-yes {
         text-decoration: none;
         background-color: white;
-        border: solid darkgreen;
-        color: darkgreen;
+        border: solid rgb(66, 66, 240);
+        color: rgb(66, 66, 240);
         box-shadow: 1px 2px 2px;
         font-size: 15px;
         margin: 0 -12px 0 0;
@@ -354,22 +349,28 @@ a {
 
     #return-home-no {
         text-decoration: none;
-        color: darkred;
+        color: rgb(66, 66, 240);
         background-color: white;
         box-shadow: 1px 2px 2px;
-        border: solid darkred;
+        border: solid rgb(66, 66, 240);
         font-size: 15px;
         padding: 2px 25px;
+        display: flex;
+        float: left;
+        margin: 38px;
     }
 
     .popupbtn2 a {
         text-decoration: none;
-        color: darkgreen;
+        color: rgb(66, 66, 240);
         background-color: white;
         box-shadow: 1px 2px 2px;
-        border: solid darkgreen;
+        border: solid rgb(66, 66, 240);
         font-size: 15px;
         padding: 2px 25px;
+        display: flex;
+        float: right;
+        margin-right: 50px;
     }
 
 }
@@ -474,6 +475,9 @@ a {
 
     .popupbtn1 {
         margin: 0 37px 0 0;
+    }
+    .popupbtn2 a {
+        margin: 0;
     }
 }
 
