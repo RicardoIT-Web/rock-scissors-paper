@@ -151,7 +151,7 @@ Devtools Lighthouse Report showing optimum performance.
 
 # Unfixed Bugs
 
-There are no bugs identified on this version.
+Bugs to be fixed on next release will be the positioning on the modal box buttons and to add some further text to the modal boxes. The buttons are in good working order and do exactly what they are supposed to. Due to this fact, there is better UX playing this game on mobiles and tablets.
 
 # Deployment
 
