@@ -4,6 +4,8 @@
 
 This project was developed to satisfy the second Milestone Project requirements for the Full Stack Software Developement program at the [Code Institute](https://www.codeinstitute.net). As a second project, this site is created using HTML5, CSS3 and JavaScript languages. This is a fully responsive website however the design is focussed more for playing on mobile phones and tablets for better UX.
 
+Click [Here](https://ricardoit-web.github.io/rock-scissors-paper/) to see deployed game.
+
 The purpose of this project is to demonstrate an understanding of how JavaScript is implemented and interpreted by the browser. In this example I have chosen to create a simple game of Rock / Scissors / Paper to demonstrate this understanding.
 
 
